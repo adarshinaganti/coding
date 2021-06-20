@@ -54,6 +54,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 bool isValidPixel(int i, int j, int height, int width){
     return i >= 0 && i < height && j >= 0 && j < width;
 }
+
 RGBTRIPLE getBlurredPixel(int i, int j, int height, int width, RGBTRIPLE image[height][width]){
     int redValue, blueValue, greenValue; redValue = blueValue = greenValue = 0;
     int numOfValidPixels = 0;
